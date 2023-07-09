@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putihabu"
+    tools:context=".activity.LaunchActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="184dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="4dp"
+        android:text="SELAMAT DATANG"
+        android:textColor="@color/abu"
+        android:textColorHighlight="#FF0000"
+        android:textColorHint="#F44336"
+        android:textColorLink="#FF0000"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/putihabu"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        app:layout_constraintVertical_bias="0.185">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingStart="9dp">
+
+            <TextView
+                android:id="@+id/tv_sudahpunyaakun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun?"
+                android:textColor="@color/abu" />
+
+            <Button
+                android:id="@+id/tv_login"
+                android:layout_width="308dp"
+                android:layout_height="53dp"
+                android:backgroundTint="@color/orange"
+                android:elevation="10dp"
+                android:shadowColor="@color/abu"
+                android:shadowDx="3"
+                android:shadowDy="6"
+                android:shadowRadius="8"
+                android:text="Login"
+                app:cornerRadius="8dp" />
+
+            <TextView
+                android:id="@+id/tv_blmpnyakun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Belum Punya Akun?"
+                android:textColor="@color/abu" />
+
+            <Button
+                android:id="@+id/id_register"
+                android:layout_width="308dp"
+                android:layout_height="53dp"
+                android:backgroundTint="@color/orange"
+                android:text="Register"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
