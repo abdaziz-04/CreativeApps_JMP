@@ -58,15 +58,16 @@
                 android:id="@+id/tv_sudahpunyaakun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sudah Punya Akun?"
+                android:text="Sudah Punya Akun"
                 android:textColor="@color/abu" />
 
             <Button
-                android:id="@+id/tv_login"
+                android:id="@+id/btn_login"
                 android:layout_width="308dp"
                 android:layout_height="53dp"
                 android:backgroundTint="@color/orange"
                 android:elevation="10dp"
+                android:onClick="postLogin"
                 android:shadowColor="@color/abu"
                 android:shadowDx="3"
                 android:shadowDy="6"
@@ -79,11 +80,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Belum Punya Akun?"
+                android:text="Belum Punya Akun"
                 android:textColor="@color/abu" />
 
             <Button
-                android:id="@+id/id_register"
+                android:id="@+id/btn_register1"
                 android:layout_width="308dp"
                 android:layout_height="53dp"
                 android:backgroundTint="@color/orange"

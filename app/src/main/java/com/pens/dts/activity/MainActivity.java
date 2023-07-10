@@ -1,8 +1,10 @@
-package com.pens.dts;
+package com.pens.dts.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.pens.dts.R;
 
 public class MainActivity extends AppCompatActivity {
 
