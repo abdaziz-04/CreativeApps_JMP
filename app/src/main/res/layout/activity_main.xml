@@ -77,4 +77,19 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_buatdesain"
         app:layout_constraintStart_toStartOf="@+id/btn_buatdesain" />
 
+    <TextView
+        android:id="@+id/tv_namamu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/putihabu"
+        android:textColorHint="#FF0303"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

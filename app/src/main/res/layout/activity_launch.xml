@@ -66,14 +66,15 @@
                 android:layout_width="308dp"
                 android:layout_height="53dp"
                 android:backgroundTint="@color/orange"
-                android:elevation="10dp"
+                android:elevation="2dp"
                 android:onClick="postLogin"
                 android:shadowColor="@color/abu"
                 android:shadowDx="3"
                 android:shadowDy="6"
                 android:shadowRadius="8"
                 android:text="Login"
-                app:cornerRadius="8dp" />
+                app:cornerRadius="8dp"
+                />
 
             <TextView
                 android:id="@+id/tv_blmpnyakun"
