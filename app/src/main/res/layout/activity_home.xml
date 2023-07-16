@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="clickSubmit"
+    android:padding="20dp"
+    tools:context=".activity.HomeActivity">
+
+    <Button
+        android:id="@+id/btn_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickCalculator"
+        android:text="Calculator"
+        app:cornerRadius="8sp" />
+
+    <Button
+        android:id="@+id/btn_implicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_calculator"
+        android:onClick="clickImplicit"
+        android:text="Implicit"
+        app:cornerRadius="8sp" />
+
+    <Button
+        android:id="@+id/btn_explicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_implicit"
+        android:onClick="clickExplicit"
+        android:text="Explicit"
+        app:cornerRadius="8sp" />
+
+    <Button
+        android:id="@+id/btn_submit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT"
+        android:onClick="clickSubmit"
+        app:cornerRadius="8dp" />
+
+</RelativeLayout>

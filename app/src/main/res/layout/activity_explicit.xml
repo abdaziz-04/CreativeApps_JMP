@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".activity.TugasEmpat">
+    tools:context=".activity.ExplicitActivity">
 
     <TextView
         android:id="@+id/tv_inputNama"
@@ -25,18 +25,33 @@
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/tv_hasil"
+        android:id="@+id/tv_inputInstitusi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hasil"
-        android:textAlignment="center"
+        android:text="Masukkan Asal Instansi"
         android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_inputNama2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input Instansi"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/btn_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="postSubmit"
-        android:text="SUBMIT"
+        android:onClick="postTanpaData"
+        android:text="KIRIM TANPA DATA"
+        app:cornerRadius="7dp" />
+
+    <Button
+        android:id="@+id/btn_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="postData"
+        android:text="KIRIM DATA"
         app:cornerRadius="7dp" />
 </LinearLayout>

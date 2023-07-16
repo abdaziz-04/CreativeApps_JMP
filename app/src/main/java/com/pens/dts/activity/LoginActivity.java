@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.pens.dts.R;
 
@@ -28,9 +30,25 @@ public class LoginActivity extends AppCompatActivity {
         btnlogin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+                checkLogin();
             }
         });
+    }
+
+    private  void checkLogin() {
+        String email = edusername.getText().toString().trim();
+        String password = edpassword.getText().toString().trim();
+
+        Log.d("LoginActivity", "Email " + email + "Password" + password);
+        if (email.equals("abdaziz1713@gmail.com") && password.equals("aziz123")) {
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Username/Password salah!", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void postLogin(View view) {
     }
 }
