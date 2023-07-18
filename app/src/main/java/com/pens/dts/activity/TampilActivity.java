@@ -18,10 +18,10 @@ public class TampilActivity extends AppCompatActivity {
         tvNameOut = findViewById(R.id.tv_nameOutput);
         tvInstansiOut = findViewById(R.id.tv_institusiOutput);
 
-        String name = getIntent().getStringExtra(ExplicitActivity.KEY_NAME);
-        String instansi = getIntent().getStringExtra(ExplicitActivity.KEY_INSTANSI);
+            String name = getIntent().getStringExtra(ExplicitActivity.KEY_NAME);
+            String instansi = getIntent().getStringExtra(ExplicitActivity.KEY_INSTANSI);
 
-        tvNameOut.setText(name);
-        tvInstansiOut.setText(instansi);
+            tvNameOut.setText(name);
+            tvInstansiOut.setText(instansi);
     }
 }

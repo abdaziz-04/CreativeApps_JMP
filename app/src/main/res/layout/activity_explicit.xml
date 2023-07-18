@@ -25,14 +25,14 @@
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/tv_inputInstitusi"
+        android:id="@+id/tv_inputInstansi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Masukkan Asal Instansi"
         android:textSize="20sp" />
-
+s
     <EditText
-        android:id="@+id/ed_inputNama2"
+        android:id="@+id/ed_inputInstansi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

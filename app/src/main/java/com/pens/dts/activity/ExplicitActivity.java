@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,38 +23,45 @@ public class ExplicitActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explicit);
 
-         btnData = findViewById(R.id.btn_data);
-         btnTanpaData = findViewById(R.id.btn_nodata);
+        btnData = findViewById(R.id.btn_data);
+        btnTanpaData = findViewById(R.id.btn_nodata);
+        edInputNama = findViewById(R.id.ed_inputNama); // Inisialisasi EditText inputNama
+        edInputInstansi = findViewById(R.id.ed_inputInstansi); // Inisialisasi EditText inputInstansi
 
-         btnData.setOnClickListener(this);
-         btnTanpaData.setOnClickListener(this);
-
+        btnData.setOnClickListener(this);
+        btnTanpaData.setOnClickListener(this);
     }
+
 
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.btn_data) {
+        int viewId = view.getId();
+        if (viewId == R.id.btn_data) {
             postData();
-        } else if (view.getId() == R.id.btn_nodata) {
+        } else if (viewId == R.id.btn_nodata) {
             postTanpaData();
         }
+
     }
 
-    public void postTanpaData() {
-        Intent newIntent = new Intent(this, TampilActivity.class);
-        startActivity(newIntent);
-    }
 
     public void postData() {
         String name = edInputNama.getText().toString().trim();
         String instansi = edInputInstansi.getText().toString().trim();
 
         Intent moveIntentWithData = new Intent(this, TampilActivity.class);
+
         moveIntentWithData.putExtra(KEY_NAME, name);
         moveIntentWithData.putExtra(KEY_INSTANSI, instansi);
 
         startActivity(moveIntentWithData);
+    }
+
+
+    public void postTanpaData() {
+        Intent newIntent = new Intent(this, TampilActivity.class);
+        startActivity(newIntent);
     }
 
 }
