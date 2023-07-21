@@ -13,6 +13,12 @@
         android:theme="@style/Theme.DigitalTalentsScholarship"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ListInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListInfoMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.CalcResultActivity"
             android:exported="false" />
         <activity
