@@ -16,7 +16,7 @@ import com.pens.dts.R;
 public class LoginActivity extends AppCompatActivity {
     TextView tvusername, tvforgotpw, idnanyaakun;
     EditText edusername, edpassword;
-    Button btnlogin1;
+    Button btnlogin1, btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,5 +50,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void postLogin(View view) {
+    }
+
+    public void postRegister(View view) {
+
     }
 }

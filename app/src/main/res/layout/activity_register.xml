@@ -44,54 +44,69 @@
                 android:id="@+id/tv_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username" />
+                android:text="Username"
+                android:textColor="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/ed_username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
                 android:hint="Masukkan Username"
-                android:inputType="text" />
+                android:inputType="text"
+                android:paddingStart="8dp" />
 
             <TextView
                 android:id="@+id/tv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alamat Email" />
+                android:text="Alamat Email"
+                android:textColor="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/ed_emailin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
-                android:inputType="textEmailAddress" />
+                android:hint="Masukkan Alamat Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp" />
 
             <TextView
                 android:id="@+id/tv_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kata Sandi" />
+                android:text="Kata Sandi"
+                android:textColor="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/editTextTextPassword2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:hint="Masukkan Kata Sandi"
+                android:inputType="textPassword"
+                android:paddingStart="8dp" />
 
             <TextView
                 android:id="@+id/tv_confirmpw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Konfirmasi Kata Sandi" />
+                android:text="Konfirmasi Kata Sandi"
+                android:textColor="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/editTextTextPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:hint="Konfirmasi Kata Sandi"
+                android:inputType="textPassword"
+                android:paddingStart="8dp" />
 
             <Button
                 android:id="@+id/btn_register1"
